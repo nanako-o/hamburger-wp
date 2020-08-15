@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+nav.p-aside {
+    a {
+        width: 130px;
+        text-decoration: none;
+        font-size:1.2rem;
+        &:link,&:visited,&:hover,&:active {
+            color: #707070;
+        }
+    }
+    h2 {
+        margin: 46px 0 46px 0;
+        padding-left:43px;
+        color: #707070;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    ul{
+        width: 240px;
+        padding-left:20px;
+        list-style: none;
+        li{
+            margin: 23px;
+            font-size: 1rem;
+        }
+    }
+}
+
+ul.sub-menu {
+    margin:0;
+    padding: 0 0 10px 0;
+    li a {
+        font-size: 1rem;
+    }
+}

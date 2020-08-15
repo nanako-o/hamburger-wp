@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+.p-article__img {
+    box-sizing: border-box;
+    padding-left: 50px;
+    background-image: url("../img/dummysite.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    line-height: 265px;
+    p {
+        font-size: 2rem;
+    }
+}
+
+.p-section-map {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    background-image: url("../img/map.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.p-section-map__inner {
+    box-sizing: border-box;
+    width: 475px;
+    height: auto;
+    padding: 50px;
+    background: rgba(0,0,0,0.3);
+    .p-section__line {
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        top: 70px;
+        display: block;
+        border-bottom: solid 1px #ffffff;
+    }
+    h2 {
+        margin:0 0 50px 0;
+        color: #ffffff;
+        font-size: 1.8rem;
+    }
+    p {
+        color: #ffffff;
+        font-size: 0.8rem;
+    }
+}
+
+/*archive*/
+
+.p-article__img--archive {
+    box-sizing: border-box;
+    height: 120px;
+    padding-left: 50px;
+    background-color: #000000;
+    background-image: url("../img/archiveimage.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    ul{
+        list-style-type: none;
+    }
+    a::before{
+        content: "Menu: ";
+        font-size: 2rem;
+    }
+    a {
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 120px;
+        text-decoration: none;
+        &:link,&:visited,&:hover,&:active {
+            color: #ffffff;
+        }
+    }
+}
+
+.wp-pagenavi {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    span.pages {
+        border: none;
+        color: #707070;
+    }
+
+        span.current {
+            margin: 20px 5px;
+            background-color: #707070;
+            border: solid 1px #707070;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        a.page.larger,a.page.smaller {
+            text-decoration: none;
+            &:link,&:visited,&:hover,&:active {
+                border: solid 1px #707070;
+                color: #707070;
+            }
+        }
+
+        a.nextpostslink,a.previouspostslink{
+            text-decoration: none;
+            &:link,&:visited,&:hover,&:active {
+                border: none;
+                color: #707070;
+            }
+        }
+}
+
+/*single*/
+
+.p-article__img--single {
+    box-sizing: border-box;
+    height: 250px;
+    padding-left: 50px;
+    background-color: #000000;
+    background-image: url("../img/singleimage.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 250px;
+        span {
+            font-size: 1rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+/*page*/
+
+.p-article__img--page {
+    box-sizing: border-box;
+    height: 250px;
+    padding-left: 50px;
+    background-color: #000000;
+    background-image: url("../img/shop.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 250px;
+        span {
+            font-size: 1rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+/*search*/
+
+.p-article__img--search {
+    box-sizing: border-box;
+    height: 120px;
+    padding-left: 50px;
+    background-color: #000000;
+    background-image: url("../img/archiveimage.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    ul{
+        list-style-type: none;
+    }
+    a::before{
+        content: "Search: ";
+        font-size: 2rem;
+    }
+    a {
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 120px;
+        text-decoration: none;
+        &:link,&:visited,&:hover,&:active {
+            color: #ffffff;
+        }
+    }
+}

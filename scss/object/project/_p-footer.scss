@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.p-footer {
+    text-align: center;
+    line-height: 37.5px;
+    .p-footer__link {
+        background-color: #9D8670;
+        a{
+            color: #ffffff;
+            font-size: 1rem;
+            text-decoration: none;
+                &:first-child {
+                    border-right: solid 1px #ffffff;
+                    padding-right: 5px;
+                }
+        }
+    }
+      span {
+        color: #ffffff;
+        font-size: 0.7rem;
+    }
+}

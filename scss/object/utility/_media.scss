@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@media screen and (max-width: 768px) {
+  body {
+      overflow-y: auto;
+    }
+  
+  .l-main {
+      width: 100%;
+  }
+  .l-aside {
+      display: none;
+  }
+
+  .p-header__hamburger {
+      display: flex;
+      flex: 0 0 0px;
+      align-self: center;
+      margin-left: 16px;
+      text-align: center;
+      color: #707070;
+      font-size: 2rem;
+      font-weight: bold;
+  }
+}
