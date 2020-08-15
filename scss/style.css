@@ -96,6 +96,35 @@ body > .l-aside {
     color: #707070;
     font-size: 1rem; }
 
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
 .p-header__hamburger {
   display: none; }
 
@@ -231,7 +260,6 @@ body > .l-aside {
   box-sizing: border-box;
   height: 250px;
   padding-left: 50px;
-  background-color: #000000;
   background-image: url("../img/singleimage.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -469,44 +497,35 @@ ul.sub-menu {
       font-size: 1rem; }
 
 /*single*/
-.single p, h2, h3, h4, h5, h6 {
+.single article.p-article--single p, .single article.p-article--single h2, .single article.p-article--single h3, .single article.p-article--single h4, .single article.p-article--single h5, .single article.p-article--single h6 {
   width: 87%;
   margin: 0 auto; }
-
-.single p {
+.single article.p-article--single p {
   font-size: 1rem;
   padding: 10px 0; }
-
-.single p.bold {
+.single article.p-article--single p.bold {
   font-weight: bold;
   font-size: 1rem;
   padding: 10px 0; }
-
-.single h2 {
+.single article.p-article--single h2 {
   padding: 20px 0;
   font-size: 1.8rem; }
-
-.single h3 {
+.single article.p-article--single h3 {
   padding: 20px 0;
   font-size: 1.4rem; }
-
-.single h4 {
+.single article.p-article--single h4 {
   padding: 20px 0;
   font-size: 1rem; }
-
-.single h5 {
+.single article.p-article--single h5 {
   padding: 20px 0;
   font-size: 1rem; }
-
-.single h6 {
+.single article.p-article--single h6 {
   padding: 20px 0;
   font-size: 1rem; }
-
-.single img {
+.single article.p-article--single img {
   width: 100%;
   height: auto; }
-
-.single blockquote.wp-block-quote {
+.single article.p-article--single blockquote.wp-block-quote {
   box-sizing: border-box;
   width: 87%;
   margin: 0 auto;
@@ -514,83 +533,74 @@ ul.sub-menu {
   padding-bottom: 30px;
   font-size: 1rem;
   background-color: #F5F5F5; }
-  .single blockquote.wp-block-quote P {
+  .single article.p-article--single blockquote.wp-block-quote P {
     width: 90%;
     margin: 0 auto;
     padding: 30px 0 30px 0;
     color: #3C2A10; }
-  .single blockquote.wp-block-quote cite {
+  .single article.p-article--single blockquote.wp-block-quote cite {
     box-sizing: border-box;
     width: 90%;
     margin: 0 50px;
     padding: 30px 0 30px 0;
     font-size: 1rem; }
-
-.single figure.wp-block-image.size-large {
+.single article.p-article--single figure.wp-block-image.size-large {
   width: 87%;
   margin: 30px auto; }
-  .single figure.wp-block-image.size-large img {
+  .single article.p-article--single figure.wp-block-image.size-large img {
     width: 100%;
     height: auto;
     object-fit: cover; }
-
-.single div.wp-block-media-text.alignwide.is-stacked-on-mobile {
+.single article.p-article--single div.wp-block-media-text.alignwide.is-stacked-on-mobile {
   width: 87%;
   margin: 0 auto;
   margin-bottom: 30px; }
-
-.single figure.wp-block-gallery.columns-3.is-cropped img {
+.single article.p-article--single figure.wp-block-gallery.columns-3.is-cropped img {
   object-fit: cover;
   width: 219px;
   height: 129px; }
-
-.single figure.aligncenter.size-medium {
+.single article.p-article--single figure.aligncenter.size-medium {
   text-align: center;
   margin-bottom: 40px; }
-  .single figure.aligncenter.size-medium img {
+  .single article.p-article--single figure.aligncenter.size-medium img {
     object-fit: cover;
     width: 291px;
     height: 179px; }
-
-.single ol {
+.single article.p-article--single ol {
   width: 87%;
   margin: 0 auto;
   margin-bottom: 50px; }
-  .single ol li {
+  .single article.p-article--single ol li {
     margin-left: 1.5rem; }
-    .single ol li ol {
+    .single article.p-article--single ol li ol {
       margin-top: 20px; }
-
-.single ul {
+.single article.p-article--single ul {
   width: 87%;
   margin: 0 auto;
   margin-bottom: 50px;
   list-style-type: none; }
-  .single ul ul {
+  .single article.p-article--single ul ul {
     margin-top: 20px; }
-
-.single pre.wp-block-code {
+.single article.p-article--single pre.wp-block-code {
   box-sizing: border-box;
   width: 87%;
   margin: 0 auto 50px;
   padding: 30px;
   background-color: #F5F5F5;
   color: #3C2A10; }
-
-.single figure.wp-block-table {
+.single article.p-article--single figure.wp-block-table {
   width: 87%;
   margin: 0 auto 50px;
   overflow: hidden; }
-  .single figure.wp-block-table td {
+  .single article.p-article--single figure.wp-block-table td {
     height: 40px;
     padding-left: 20px;
     vertical-align: middle;
     border: 1px solid #707070; }
-
-.single div.wp-block-buttons {
+.single article.p-article--single div.wp-block-buttons {
   width: 87%;
   margin: 0 auto 50px; }
-  .single div.wp-block-buttons a.wp-block-button__link {
+  .single article.p-article--single div.wp-block-buttons a.wp-block-button__link {
     width: 215px;
     height: 50px;
     line-height: 50px;
@@ -599,38 +609,47 @@ ul.sub-menu {
     border: 1px solid #707070;
     background: linear-gradient(to bottom, #F2EDE9, #DED8D3);
     font-size: 1rem; }
+.single article.p-article--single .wp-caption {
+  font-size: 1.3rem; }
+.single article.p-article--single .wp-caption-text {
+  margin-top: -20px; }
+.single article.p-article--single .sticky {
+  padding: 20px;
+  background: #f3f3f3; }
+.single article.p-article--single .bypostauthor {
+  padding: 20px;
+  background: #cccccc; }
+.single article.p-article--single .gallery-caption {
+  font-size: 1.3rem; }
+.single article.p-article--single .alignright {
+  text-align: right; }
+.single article.p-article--single .alignleft {
+  text-align: left; }
 
 /*page*/
-.page p, h2, h3, h4, h5, h6 {
+.page article.p-article--page p, .page article.p-article--page h2, .page article.p-article--page h3, .page article.p-article--page h4, .page article.p-article--page h5, .page article.p-article--page h6 {
   width: 87%;
   margin: 0 auto; }
-
-.page p {
+.page article.p-article--page p {
   font-size: 1rem;
   padding: 10px 0; }
-
-.page p.bold {
+.page article.p-article--page p.bold {
   font-weight: bold;
   font-size: 1rem;
   padding: 10px 0; }
-
-.page h2 {
+.page article.p-article--page h2 {
   padding: 20px 0;
   font-size: 1.8rem; }
-
-.page h3 {
+.page article.p-article--page h3 {
   padding: 20px 0;
   font-size: 1.4rem; }
-
-.page h4 {
+.page article.p-article--page h4 {
   padding: 20px 0;
   font-size: 1rem; }
-
-.page h5 {
+.page article.p-article--page h5 {
   padding: 20px 0;
   font-size: 1rem; }
-
-.page h6 {
+.page article.p-article--page h6 {
   padding: 20px 0;
   font-size: 1rem; }
 

@@ -1,16 +1,14 @@
 <?php get_header(); ?>
 
-<?php while( have_posts() ): ?>
-<?php the_post(); ?>
-
-
-            <article class="p-article--single">
-                <div class="p-article__img--single">
-                    <h1><?php the_title(); ?></h1>
-                </div>
-                <?php the_content(); ?>
-                </article>
-            <?php endwhile; ?>
+<article class="p-article--single">
+    <?php while( have_posts() ): ?>
+    <?php the_post(); ?>
+                        <div class="p-article__img--single">
+                            <h1><?php the_title(); ?></h1>
+                        </div>
+                        <?php the_content(); ?>
+    <?php endwhile; ?>
+</article>
         </div>
         <?php get_sidebar(); ?>
     </div>

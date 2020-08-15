@@ -2,6 +2,8 @@
     //テーマサポート
     add_theme_support( 'menus' );
     add_theme_support( 'title-tag' );
+    add_theme_support( 'automatic-feed-links' );
+
 
     //タイトル出力
     function hamburger_title( $title ) {
@@ -27,18 +29,25 @@
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_scripts' );
 
-    //サイドバー
-    function hamburger_widgets_init(){
-        register_sidebar( array(
-            'name' => 'Sidebar',
-            'id' => 'sidebar',
-        ));
-    }
-    add_action('widgets_init','hamburger_widgets_init');
-
     //引用タグのクラス変更
     function my_replace_to_custom_tags( $postarr ) {
         $postarr['post_content'] = str_replace('<blockquote>', '<blockquote class="p-article--quote">', $postarr['post_content'] );
         return $postarr;
     }
     add_filter('wp_insert_post_data', 'my_replace_to_custom_tags');
+
+    //コンテンツ幅
+    if ( ! isset( $content_width ) ) {
+        $content_width = 900;
+    }
+
+
+    //bodyタグ開始に挿入
+
+    add_action( 'wp_body_open', function() {
+        ?>
+        <!-- ここから挿入したいソースコードなどスタート -->
+        ・・・・・
+        <!-- ここまで -->
+        <?php
+    });
